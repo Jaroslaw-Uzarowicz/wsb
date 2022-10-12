@@ -12,11 +12,12 @@ $sql = "SELECT * FROM `users`;";
 $result = $conn->query($sql);
 $count = 0;
 while ($user = $result->fetch_assoc()){
-  $count++;
+    $count++;
     echo <<< E
     Użytkownik $count:<br>
     Imię i nazwisko: $user[Imie] $user[Nazwisko]<br>
-    Data urodzenia: $user [Created at]
+    Miasto: $user[city_id]<br>
+    Data urodzenia: $user[Created_at]
     <hr>
 E;
   }
