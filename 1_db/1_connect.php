@@ -1,5 +1,5 @@
 <?php
-$con = @new mysqli("localhost","root","","project");
-echo "<hr>";
+$con = @new mysqli("localhost","root","","wsb");
+echo "plik z połączeniem db";
 echo $con ->connect_errno;
 ?>
