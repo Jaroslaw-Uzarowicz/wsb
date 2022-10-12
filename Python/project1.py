@@ -55,3 +55,4 @@ print(surname[0:3]) # Kow
 print(surname[-2:]) #
 print(surname[:-2]) #
 print(surname[:-2:2])
+'''
