@@ -14,8 +14,9 @@ else:
     '''
 
 '''
-    Użytkownik podaje wartośći trzech zmiennych: x,y,z.
-    Wyświetl, która z tych trzech wartościjest największa
+    Zadanie:
+          Użytkownik podaje wartośći trzech zmiennych: x,y,z.
+         Wyświetl, która z tych trzech wartości jest największa
     
 '''
 x=input('Podaj wartość x: ')
