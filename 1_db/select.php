@@ -16,7 +16,7 @@ while ($user = $result->fetch_assoc()){
     echo <<< E
     Użytkownik $count:<br>
     Imię i nazwisko: $user[Imie] $user[Nazwisko]<br>
-    Data urodzenia: $user[Created at]
+    Data urodzenia: $user [Created at]
     <hr>
 E;
   }
