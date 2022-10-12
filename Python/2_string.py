@@ -1,3 +1,6 @@
+from urllib.error import ContentTooShortError
+
+
 print("test")
 text="Anna, paweł, Jan"
 print(type(text))
@@ -11,3 +14,10 @@ nameUpper=name1.upper()
 print(nameUpper)
 nameLower=name1.lower()
 print(nameLower)
+
+
+
+# sprawdzanie zawartośći
+surname=input()
+content=surname.isalpha()
+print(content)
