@@ -11,7 +11,9 @@ require_once('/script/1_connect.php');
 $sql = "SELECT * FROM 'users';";
 $result = $coon->query($sql)
 while ($user = $results->fetch_assoc()){
-echo "string<br>"
+echo <<< E;
+Imię i nazwisko $user[name] $[surname]
+<br>
   }
    ?>
  </body>
