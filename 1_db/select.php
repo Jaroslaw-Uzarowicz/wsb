@@ -7,13 +7,18 @@
 <body>
   <h3>Użytkownicy z tabeli users</h3>
   <?php
-require_once('/script/1_connect.php');
-$sql = "SELECT * FROM 'users';";
-$result = $coon->query($sql)
-while ($user = $results->fetch_assoc()){
-echo <<< E;
-Imię i nazwisko $user[name] $[surname]
-<br>
+require_once('./script/1_connect.php');
+$sql = "SELECT * FROM `users`;";
+$result = $conn->query($sql);
+$count = 0;
+while ($user = $result->fetch_assoc()){
+  $count++;
+    echo <<< E
+    Użytkownik $count:<br>
+    Imię i nazwisko: $user[Imie] $user[Nazwisko]<br>
+    Data urodzenia: $user[Created at]
+    <hr>
+E;
   }
    ?>
  </body>
